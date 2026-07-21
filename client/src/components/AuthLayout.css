@@ -1,0 +1,40 @@
+.auth-container{
+    display:flex;
+    min-height:100vh;
+}
+
+.auth-left{
+    flex:1;
+    background:#2563eb;
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:80px;
+}
+
+.auth-left h1{
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.auth-left h2{
+    font-size:55px;
+}
+
+.auth-left p{
+    margin-top:20px;
+    font-size:18px;
+}
+
+.auth-right{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#f8fafc;
+}

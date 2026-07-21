@@ -1,0 +1,43 @@
+.output-console {
+
+    background: #111827;
+
+    color: #e5e7eb;
+
+    height: 180px;
+
+    border-top: 1px solid #374151;
+
+    padding: 18px;
+
+    overflow-y: auto;
+
+    font-family: "Consolas", "Courier New", monospace;
+
+}
+
+.output-console h3 {
+
+    color: #ffffff;
+
+    margin-bottom: 12px;
+
+    font-size: 18px;
+
+}
+
+.output-console pre {
+
+    color: #d1d5db;
+
+    margin: 0;
+
+    white-space: pre-wrap;
+
+    word-break: break-word;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+
+}

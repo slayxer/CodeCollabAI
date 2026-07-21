@@ -1,0 +1,362 @@
+/* ===========================================
+   Project Card
+=========================================== */
+
+.project-card{
+
+    width:100%;
+
+    background:#1f2937;
+
+    border:1px solid #374151;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    margin-bottom:22px;
+
+    transition:.25s ease;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#2563eb;
+
+    box-shadow:0 12px 30px rgba(37,99,235,.20);
+
+}
+
+/* ===========================================
+   Header
+=========================================== */
+
+.project-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+.project-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.folder-icon{
+
+    font-size:24px;
+
+    color:#3b82f6;
+
+}
+
+.project-title h2{
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin:0;
+
+}
+
+/* ===========================================
+   Favorite
+=========================================== */
+
+.favorite-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#374151;
+
+    color:#facc15;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:20px;
+
+}
+
+.favorite-btn:hover{
+
+    background:#facc15;
+
+    color:#111827;
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================================
+   Description
+=========================================== */
+
+.project-description{
+
+    color:#94a3b8;
+
+    line-height:1.6;
+
+    font-size:15px;
+
+    min-height:48px;
+
+}
+
+/* ===========================================
+   Tags
+=========================================== */
+
+.project-tags{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.tech-badge{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:7px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.public-badge{
+
+    background:#14532d;
+
+    color:#86efac;
+
+    padding:7px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.private-badge{
+
+    background:#374151;
+
+    color:white;
+
+    padding:7px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* ===========================================
+   Footer
+=========================================== */
+
+.project-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:auto;
+
+    border-top:1px solid #374151;
+
+    padding-top:18px;
+
+}
+
+/* ===========================================
+   Updated Time
+=========================================== */
+
+.updated-time{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#9ca3af;
+
+    font-size:14px;
+
+}
+
+/* ===========================================
+   Buttons
+=========================================== */
+
+.project-buttons{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.project-buttons button{
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:10px 16px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+    font-weight:600;
+
+}
+
+.project-buttons button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.open-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.open-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.edit-btn-project{
+
+    background:#f59e0b;
+
+    color:white;
+
+}
+
+.edit-btn-project:hover{
+
+    background:#d97706;
+
+}
+
+.delete-btn{
+
+    background:#dc2626;
+
+    color:white;
+
+}
+
+.delete-btn:hover{
+
+    background:#b91c1c;
+
+}
+
+/* ===========================================
+   Responsive
+=========================================== */
+
+@media(max-width:768px){
+
+    .project-footer{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:16px;
+
+    }
+
+    .project-buttons{
+
+        width:100%;
+
+        justify-content:flex-end;
+
+    }
+
+}
+.collab-btn{
+
+    background:#10b981;
+
+    color:white;
+
+}
+
+.collab-btn:hover{
+
+    background:#059669;
+
+}

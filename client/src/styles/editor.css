@@ -1,0 +1,143 @@
+.editor-page{
+
+    display:flex;
+
+    height:100vh;
+
+    width:100%;
+
+    overflow:hidden;
+
+    background:#111827;
+
+}
+
+/* ========================= */
+/* File Explorer */
+/* ========================= */
+
+.file-explorer{
+
+    width:260px;
+
+    min-width:260px;
+
+    background:#0f172a;
+
+    border-right:1px solid #334155;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ========================= */
+/* Editor Section */
+/* ========================= */
+
+.editor-main{
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+    overflow:hidden;
+
+}
+
+/* ========================= */
+/* Tabs */
+/* ========================= */
+
+.file-tabs{
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    background:#1e293b;
+
+    border-bottom:1px solid #334155;
+
+    overflow-x:auto;
+
+}
+
+/* ========================= */
+
+.editor-wrapper{
+
+    flex:1;
+
+    overflow:hidden;
+
+}
+
+/* ========================= */
+
+.output-console {
+
+    background: #111827;
+
+    color: #e5e7eb;
+
+    padding: 18px;
+
+    height: 180px;
+
+    overflow-y: auto;
+
+}
+
+.output-console h3 {
+
+    color: white;
+
+}
+
+.output-console pre {
+
+    color: #d1d5db;
+
+    font-family: Consolas, monospace;
+
+    white-space: pre-wrap;
+
+}
+
+/* ========================= */
+
+.ai-sidebar{
+
+    width:320px;
+
+    min-width:320px;
+
+    background:#0f172a;
+
+    border-left:1px solid #334155;
+
+}
+.typing-indicator{
+
+padding:6px 12px;
+
+color:#00d26a;
+
+font-size:14px;
+
+font-weight:600;
+
+}
+.remote-cursor{
+
+    border-left:3px solid #00ff88;
+
+    margin-left:-1px;
+
+}
