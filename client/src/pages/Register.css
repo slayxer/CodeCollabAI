@@ -1,75 +1,68 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import toast from "react-hot-toast";
+/* ===============================
+   Register Page
+================================= */
 
-import API from "../services/api";
-import AuthLayout from "../components/AuthLayout";
-import "./Register.css";
-
-function Register() {
-  const navigate = useNavigate();
-
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    password: "",
-  });
-
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      const { data } = await API.post("/auth/register", form);
-
-      toast.success(data.message);
-
-      navigate("/login");
-    } catch (error) {
-      toast.error(error.response?.data?.message || "Registration Failed");
-    }
-  };
-
-  return (
-    <AuthLayout
-      title="Create Account"
-      subtitle="Join thousands of developers."
-    >
-      <form className="register-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Full Name"
-          value={form.name}
-          onChange={handleChange}
-        />
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={form.email}
-          onChange={handleChange}
-        />
-
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          value={form.password}
-          onChange={handleChange}
-        />
-
-        <button type="submit">Register</button>
-      </form>
-    </AuthLayout>
-  );
+.register-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
 }
 
-export default Register;
+.register-form input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #2d3748;
+    border-radius: 10px;
+    background: #1f2937;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.register-form input::placeholder {
+    color: #94a3b8;
+}
+
+.register-form input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.25);
+}
+
+.register-form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-form button:hover {
+    background: linear-gradient(135deg, #4338ca, #4f46e5);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+}
+
+.register-form button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .register-form {
+        gap: 16px;
+    }
+
+    .register-form input,
+    .register-form button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
